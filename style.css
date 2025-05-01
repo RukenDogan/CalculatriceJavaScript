@@ -10,8 +10,11 @@ body {
 }
 
 .calculatrice {
-  background-color: white;
+  /* background-color: white; */
+  background-color: rgb(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
   padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   width: 320px;
@@ -26,6 +29,8 @@ body {
   color: #333;
   margin-bottom: 20px;
   min-height: 48px;
+  font-family: 'Courier New', monospace;
+  letter-spacing: 1px;
 }
 
 .boutons {
@@ -42,10 +47,16 @@ button {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 button:hover {
   background-color: #e0e0e0;
+}
+
+button:active {
+  transform: scale(0.97);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button.operator {

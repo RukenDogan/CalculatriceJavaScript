@@ -4,7 +4,6 @@ const clearButton = document.getElementById("clear");
 const equalsButton = document.getElementById("equals");
 
 let Expression = "";
-
 let number = [];
 let operator = [];
 
@@ -16,7 +15,6 @@ buttons.forEach((button) => {
       Expression = "";
       number = [];
       operator = [];
-
       display.textContent = "0";
       return;
     }
@@ -32,13 +30,18 @@ buttons.forEach((button) => {
     }
 
     Expression += value;
-    display.textContent = Expression;
+    display.textContent = display.textContent === "0" ? value : display.textContent + value;
   });
 });
 
 equalsButton.addEventListener("click", () => {
   if (Expression !== "") {
     number.push(parseFloat(Expression));
+  }
+
+  if (number.length === 0) {
+    display.textContent = "0";
+    return;
   }
 
   let result = number[0]; 
@@ -53,6 +56,12 @@ equalsButton.addEventListener("click", () => {
       result *= number[i + 1];
     } else if (operator[i] === "/") {
       result /= number[i + 1];
+    }
+    if (number[i + 1] === 0) {
+      display.textContent = "Erreur: Division par zéro";
+      number = [];
+      operator = [];
+      return; 
     }
   }
 
