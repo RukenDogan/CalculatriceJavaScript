@@ -58,7 +58,7 @@ equalsButton.addEventListener("click", () => {
       result /= number[i + 1];
     }
     if (number[i + 1] === 0) {
-      display.textContent = "Erreur: Division par zéro";
+      display.textContent = "Erreur";
       number = [];
       operator = [];
       return; 
