@@ -57,7 +57,7 @@ equalsButton.addEventListener("click", () => {
     } else if (operator[i] === "/") {
       result /= number[i + 1];
     }
-    if (number[i + 1] === 0) {
+    if (operator[i] === '/' && number[i + 1] === 0) {
       display.textContent = "Erreur";
       number = [];
       operator = [];
