@@ -71,7 +71,7 @@ button.operator {
 }
 
 button.operator:hover {
-  background-color: #c1d28a;
+  background-color: #bfd37d;
 }
 
 button.egal {
@@ -81,7 +81,7 @@ button.egal {
 }
 
 button.egal:hover {
-  background-color: #92d6df;
+  background-color: #84d6e1;
 }
 
 button#clear {
