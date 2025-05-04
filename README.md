@@ -23,7 +23,7 @@ Le projet utilise la police **"Digital-7"**, populaire pour simuler l'effet "éc
 
 Importation de la police dans le CSS :
 
-```css
+```CSS
 @font-face {
   font-family: 'Digital';
   src: url('fonts/digital-7.ttf') format('truetype');
@@ -32,6 +32,7 @@ Importation de la police dans le CSS :
 .display {
   font-family: 'Digital', monospace;
 }
+```
 
 📌 La police peut être téléchargée ici :
 https://www.dafont.com/digital-7.font
