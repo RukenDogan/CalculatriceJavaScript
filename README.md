@@ -70,4 +70,4 @@ Ce projet est open source.
 
 ---
 
-✨ Projet réalisé par Ruken, avec [Samy] et l'aide de [Tom](https://github.com/TomDeprez)
+Ruken
